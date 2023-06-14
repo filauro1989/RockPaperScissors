@@ -56,7 +56,5 @@
         font-weight: 700;
       }
     }
-    .ScoreBoard__Mobile {
-    }
   }
 </style>

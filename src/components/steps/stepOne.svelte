@@ -80,6 +80,13 @@
     justify-content: center;
     aspect-ratio: 1;
     box-shadow: inset 0px 5px 1px 1px rgba(219, 219, 219, 1);
+
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      box-shadow: inset 0px 5px 1px 1px rgba(219, 219, 219, 1),
+        0 0 30px 21px rgba(255, 255, 255, 0.15);
+    }
+
     .MobileImage {
       width: 50%;
     }

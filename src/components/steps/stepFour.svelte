@@ -55,8 +55,9 @@
       @content;
     }
   }
-  @mixin animate($animation, $duration, $method, $times) {
+  @mixin animate($animation, $duration, $method, $times, $delay) {
     animation: $animation $duration $method $times;
+    animation-delay: $delay;
   }
   .Container {
     height: 350px;
@@ -121,13 +122,21 @@
       color: white;
       text-align: center;
       text-transform: uppercase;
+      margin-bottom: 0.2em;
     }
     button {
       width: 190px;
-      border-radius: 4px;
+      border-radius: 8px;
       border-style: none;
-      height: 36px;
+      height: 40px;
       font-size: 1.1em;
+      color: hsl(229, 25%, 31%);
+      font-weight: 600;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        color: red;
+      }
     }
   }
   .ResultBox.Mobile {
@@ -138,6 +147,7 @@
     }
     button {
       width: 250px;
+      height: 60px;
     }
   }
   .Box {
@@ -151,7 +161,6 @@
   }
 
   .ChoiceContainer {
-    cursor: pointer;
     background-color: white;
     border-radius: 50%;
     height: 200px;
@@ -197,7 +206,7 @@
           box-shadow: 0 0 0 100px rgba(232, 231, 226, 0.2);
         }
       }
-      @include animate(pulse, 1s, ease-in-out, infinite);
+      @include animate(pulse, 1s, ease-out, infinite, 0);
     }
   }
   .PaperContainer {

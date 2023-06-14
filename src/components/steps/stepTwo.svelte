@@ -85,7 +85,6 @@
   }
 
   .ChoiceContainer {
-    cursor: pointer;
     background-color: white;
     border-radius: 50%;
     height: 200px;
