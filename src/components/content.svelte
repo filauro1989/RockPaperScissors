@@ -28,7 +28,7 @@
 
 <style lang="scss">
   .Content {
-    width: clamp(270px, 100%, 550px);
+    width: clamp(270px, 100%, 1100px);
     margin: 0 auto;
     margin-top: 4em;
     height: 70vh;

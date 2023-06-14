@@ -48,6 +48,7 @@
   }
   .PlayerChoiceTitle.Mobile {
     grid-area: 2 / 1 / 3 / 2;
+    font-size: 1.2em;
   }
 
   .AIChoiceTitle {
@@ -66,7 +67,6 @@
   }
   .PlayerChoice.Mobile {
     grid-area: 1 / 1 / 2 / 2;
-    font-size: 1.2em;
   }
   .AIChoice {
     grid-area: 2 / 2 / 3 / 3;

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { isMobile } from '../stores/stores';
+  import { isMobile, score } from '../stores/stores';
 </script>
 
 <div class="Header">
@@ -8,7 +8,7 @@
   </div>
   <div class:ScoreBoard__Mobile={isMobile} class="ScoreBoard">
     <div class="ScoreBoard__Title">SCORE</div>
-    <div class="ScoreBoard__ScorePoints">12</div>
+    <div class="ScoreBoard__ScorePoints">{$score}</div>
   </div>
 </div>
 

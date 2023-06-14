@@ -1,6 +1,9 @@
+import { get } from 'svelte/store';
 import {
   computerChoice,
   currentStep,
+  isWin,
+  score,
   userChoice,
   userSelection,
 } from '../stores/stores';
@@ -12,7 +15,7 @@ export function getResult(userSelection, computerChoice) {
   return userSelection[computerChoice];
 }
 
-export function selectChoice(choice: (typeof choices)[number]) {
+export async function selectChoice(choice: (typeof choices)[number]) {
   if (choice === 'paper') {
     userSelection.set(paper);
   } else if (choice === 'rock') {
@@ -22,14 +25,19 @@ export function selectChoice(choice: (typeof choices)[number]) {
   }
 
   userChoice.set(choice);
+
   currentStep.set(steps.awaitComputerChoice);
+
   setTimeout(() => {
     computerChoice.set(choices[Math.floor(Math.random() * choices.length)]);
     currentStep.set(steps.computerChoice);
-  }, 2000);
+    setTimeout(() => {
+      currentStep.set(steps.result);
 
-  setTimeout(() => {
-    currentStep.set(steps.result);
+      if (get(isWin)) {
+        score.update((score) => score + 1);
+      }
+    }, 2000);
   }, 2000);
 }
 
