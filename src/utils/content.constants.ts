@@ -1,3 +1,13 @@
+import PaperIcon from '../lib/images/icon-paper.svg';
+import RockIcon from '../lib/images/icon-rock.svg';
+import ScissorsIcon from '../lib/images/icon-scissors.svg';
+
+export const icons = {
+  paper: PaperIcon,
+  rock: RockIcon,
+  scissors: ScissorsIcon,
+};
+
 export const paper = {
   paper: 'draw',
   rock: 'win',
@@ -17,3 +27,10 @@ export const scissors = {
 export type PickedChoice = typeof paper | typeof rock | typeof scissors;
 
 export const choices = ['paper', 'scissors', 'rock'] as const;
+
+export enum steps {
+  playerChoice,
+  awaitComputerChoice,
+  computerChoice,
+  result,
+}
