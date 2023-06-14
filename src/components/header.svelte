@@ -16,8 +16,7 @@
   .Header {
     margin: 0 auto;
     border: 2px solid hsl(217, 16%, 45%);
-    max-width: 600px;
-    min-width: 220px;
+    width: clamp(270px, 100%, 600px);
     height: 116px;
     border-radius: 8px;
     padding: 1em;

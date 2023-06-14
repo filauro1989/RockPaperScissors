@@ -9,7 +9,6 @@
 <main>
   <Header />
   <Content />
-  ZIO
 </main>
 
 <style>
