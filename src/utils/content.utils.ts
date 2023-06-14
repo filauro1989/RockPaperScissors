@@ -1,4 +1,9 @@
-import { currentStep, userChoice, userSelection } from '../stores/stores';
+import {
+  computerChoice,
+  currentStep,
+  userChoice,
+  userSelection,
+} from '../stores/stores';
 import { choices, paper, rock, scissors, steps } from './content.constants';
 
 export function getResult(userSelection, computerChoice) {
@@ -18,7 +23,14 @@ export function selectChoice(choice: (typeof choices)[number]) {
 
   userChoice.set(choice);
   currentStep.set(steps.awaitComputerChoice);
-  // computerChoice.set(choices[Math.floor(Math.random() * choices.length)]);
+  setTimeout(() => {
+    computerChoice.set(choices[Math.floor(Math.random() * choices.length)]);
+    currentStep.set(steps.computerChoice);
+  }, 2000);
+
+  setTimeout(() => {
+    currentStep.set(steps.result);
+  }, 2000);
 }
 
 export function getClassByChoice(choice: (typeof choices)[number]) {

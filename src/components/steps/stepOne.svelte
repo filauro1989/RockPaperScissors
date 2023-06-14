@@ -1,8 +1,8 @@
 <script>
-  import { isMobile } from '../stores/stores';
-  import { icons } from '../utils/content.constants';
+  import { isMobile } from '../../stores/stores';
+  import { icons } from '../../utils/content.constants';
 
-  import { selectChoice } from '../utils/content.utils';
+  import { selectChoice } from '../../utils/content.utils';
 </script>
 
 <div class:ContainerMobile={$isMobile} class="Container">
@@ -37,12 +37,11 @@
 
 <style lang="scss">
   .Container {
-    background-image: url('../lib/images/bg-triangle.svg');
+    background-image: url('../../lib/images/bg-triangle.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 260px auto;
     height: 70%;
-    border: 1px solid green;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
