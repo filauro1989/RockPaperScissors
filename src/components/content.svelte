@@ -19,13 +19,6 @@
   <svelte:component this={component} />
 </div>
 
-<!-- <div>
-  {#if $userSelection}
-    <h1>{$derivedResult}</h1>
-    <h1>{$computerChoice}</h1>
-  {/if}
-</div> -->
-
 <style lang="scss">
   .Content {
     width: clamp(270px, 100%, 1100px);
