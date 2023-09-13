@@ -14,6 +14,7 @@ export default defineConfig({
         globPatterns: ['**/*.{svg,png}'],
       },
       manifest: {
+        theme_color: 'rgb(31, 55, 86)',
         icons: [
           {
             src: 'pwa-64x64.png',
