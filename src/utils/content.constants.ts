@@ -1,6 +1,6 @@
-import PaperIcon from '../lib/images/icon-paper.svg';
-import RockIcon from '../lib/images/icon-rock.svg';
-import ScissorsIcon from '../lib/images/icon-scissors.svg';
+import PaperIcon from '/src/lib/images/icon-paper.svg';
+import RockIcon from '/src/lib/images/icon-rock.svg';
+import ScissorsIcon from '/src/lib/images/icon-scissors.svg';
 
 export const icons = {
   paper: PaperIcon,
