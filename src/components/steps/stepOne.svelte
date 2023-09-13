@@ -37,7 +37,7 @@
 
 <style lang="scss">
   .Container {
-    background-image: url('./src/lib/images/bg-triangle.svg');
+    background-image: url('../../lib/images/bg-triangle.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 260px auto;
