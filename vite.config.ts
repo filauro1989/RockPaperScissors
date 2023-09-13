@@ -9,6 +9,7 @@ export default defineConfig({
     svelte(),
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
         icons: [
           {
