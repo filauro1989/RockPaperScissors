@@ -40,6 +40,7 @@
     background-image: url('../../lib/images/bg-triangle.svg');
     background-repeat: no-repeat;
     background-position: center;
+
     background-size: 260px auto;
     height: 70%;
     display: grid;
