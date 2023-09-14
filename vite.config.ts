@@ -11,9 +11,12 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       workbox: {
-        globPatterns: ['**/*.{svg,png}'],
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
       },
       manifest: {
+        name: 'Rock Paper Scissors',
+        short_name: 'RPS',
+        description: 'Rock Paper Scissors',
         theme_color: 'rgb(31, 55, 86)',
         icons: [
           {
