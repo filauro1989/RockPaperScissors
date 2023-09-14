@@ -16,6 +16,7 @@
     max-width: 1366px;
     margin: 0 auto;
     padding: 2em;
+
     height: 100vh;
     width: 100vw;
   }
