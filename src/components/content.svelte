@@ -3,8 +3,8 @@
   import { steps } from '../utils/content.constants';
   import StepOne from './steps/stepOne.svelte';
   import StepTwo from './steps/stepTwo.svelte';
-  import StepThree from './steps/stepThree.svelte';
   import StepFour from './steps/stepFour.svelte';
+  import StepThree from './steps/stepThree.svelte';
 
   let contentOptions = [
     { format: steps.playerChoice, component: StepOne },
